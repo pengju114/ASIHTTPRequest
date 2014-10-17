@@ -65,8 +65,6 @@
 		9C2F3A3B198F3847003CA6E0 /* ASIS3Request.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C2F3A02198F3807003CA6E0 /* ASIS3Request.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9C2F3A3C198F3847003CA6E0 /* ASIS3ServiceRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C2F3A04198F3807003CA6E0 /* ASIS3ServiceRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9C2F3A3D198F3847003CA6E0 /* Reachability.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C2F3A08198F3807003CA6E0 /* Reachability.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9C2F3A3F198F3915003CA6E0 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C2F3A3E198F3915003CA6E0 /* libz.dylib */; };
-		9C2F3A41198F391D003CA6E0 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C2F3A40198F391D003CA6E0 /* libxml2.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -152,8 +150,6 @@
 		9C2F3A05198F3807003CA6E0 /* ASIS3ServiceRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIS3ServiceRequest.m; sourceTree = "<group>"; };
 		9C2F3A08198F3807003CA6E0 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		9C2F3A09198F3807003CA6E0 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
-		9C2F3A3E198F3915003CA6E0 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
-		9C2F3A40198F391D003CA6E0 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,8 +157,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9C2F3A41198F391D003CA6E0 /* libxml2.dylib in Frameworks */,
-				9C2F3A3F198F3915003CA6E0 /* libz.dylib in Frameworks */,
 				9C2F39AC198F3794003CA6E0 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -203,8 +197,6 @@
 		9C2F39AA198F3794003CA6E0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				9C2F3A40198F391D003CA6E0 /* libxml2.dylib */,
-				9C2F3A3E198F3915003CA6E0 /* libz.dylib */,
 				9C2F39AB198F3794003CA6E0 /* Foundation.framework */,
 				9C2F39B9198F3794003CA6E0 /* XCTest.framework */,
 				9C2F39BC198F3794003CA6E0 /* UIKit.framework */,
@@ -593,6 +585,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = NO;
+				CONFIGURATION_BUILD_DIR = "../$(PROJECT)/build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
 				DSTROOT = /tmp/ASIHTTPRequest.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ASIHTTPRequest/ASIHTTPRequest-Prefix.pch";
@@ -608,7 +601,7 @@
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				VALID_ARCHS = "armv7 armv7s";
+				VALID_ARCHS = "armv7 armv7s arm64";
 			};
 			name = Debug;
 		};
@@ -616,6 +609,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = NO;
+				CONFIGURATION_BUILD_DIR = "../$(PROJECT)/build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
 				DSTROOT = /tmp/ASIHTTPRequest.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ASIHTTPRequest/ASIHTTPRequest-Prefix.pch";
@@ -631,7 +625,7 @@
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				VALID_ARCHS = "armv7 armv7s";
+				VALID_ARCHS = "armv7 armv7s arm64";
 			};
 			name = Release;
 		};
@@ -690,6 +684,7 @@
 				9C2F39CD198F3794003CA6E0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9C2F39CE198F3794003CA6E0 /* Build configuration list for PBXNativeTarget "ASIHTTPRequestTests" */ = {
 			isa = XCConfigurationList;
@@ -698,6 +693,7 @@
 				9C2F39D0198F3794003CA6E0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

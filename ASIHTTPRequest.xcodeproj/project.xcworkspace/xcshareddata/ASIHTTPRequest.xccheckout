@@ -10,29 +10,29 @@
 	<string>ASIHTTPRequest</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>DAD77DF7-5174-43A0-BE99-A62BED07D7F2</key>
+		<key>C7C345EF45BAF6B2AFA936687DA95777E4CA8C28</key>
 		<string>https://github.com/pengju114/ASIHTTPRequest.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>ASIHTTPRequest.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>DAD77DF7-5174-43A0-BE99-A62BED07D7F2</key>
+		<key>C7C345EF45BAF6B2AFA936687DA95777E4CA8C28</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/pengju114/ASIHTTPRequest.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>DAD77DF7-5174-43A0-BE99-A62BED07D7F2</string>
+	<string>C7C345EF45BAF6B2AFA936687DA95777E4CA8C28</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>DAD77DF7-5174-43A0-BE99-A62BED07D7F2</string>
+			<string>C7C345EF45BAF6B2AFA936687DA95777E4CA8C28</string>
 			<key>IDESourceControlWCCName</key>
 			<string>ASIHTTPRequest</string>
 		</dict>
